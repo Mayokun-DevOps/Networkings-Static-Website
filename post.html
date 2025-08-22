@@ -1,39 +1,74 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interior Bliss - Post</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <title>Blog Post - My Simple Blog</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
-    <div class="container">
-        <a class="navbar-brand fw-bold" href="#">Interior Bliss</a>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            </ul>
+    <header>
+        <div class="container">
+            <h1 class="logo">My Simple Blog</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
-</nav>
+    </header>
 
-<div class="container my-5">
-    <h1 class="mb-4">Elegant Chairs for Modern Homes</h1>
-    <img src="img/chair.jpg" class="img-fluid mb-4" alt="Decor Chair">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a dolor vitae ipsum vehicula malesuada. 
-    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean commodo 
-    fermentum sapien, nec cursus dolor dapibus eu.</p>
-    <p>Sed at dignissim neque. Donec venenatis massa sit amet sem fermentum, a tincidunt est eleifend. Aliquam 
-    erat volutpat. Nulla facilisi.</p>
-</div>
+    <main class="container">
+        <article class="blog-post">
+            <header class="post-header">
+                <h1>Getting Started with HTML & CSS</h1>
+                <p class="post-meta">Published on: October 20, 2023 | Category: Web Development</p>
+                <img src="images/post1.jpg" alt="HTML and CSS" class="post-featured-image">
+            </header>
 
-<footer class="bg-dark text-white text-center py-3">
-    <p>&copy; 2025 Interior Bliss | All Rights Reserved</p>
-</footer>
+            <div class="post-content">
+                <p>HTML (HyperText Markup Language) and CSS (Cascading Style Sheets) are the fundamental building blocks of the web. In this post, we'll explore the basics of creating websites with these technologies.</p>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+                <h2>What is HTML?</h2>
+                <p>HTML provides the structure of a webpage. It uses elements and tags to define content such as headings, paragraphs, images, and links.</p>
+
+                <h2>What is CSS?</h2>
+                <p>CSS is used to style and layout web pages. It controls the colors, fonts, spacing, and overall visual appearance of HTML elements.</p>
+
+                <h2>Basic Example</h2>
+                <p>Here's a simple example of HTML and CSS working together:</p>
+
+                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;style&gt;
+        body { font-family: Arial; }
+        h1 { color: blue; }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello World!&lt;/h1&gt;
+    &lt;p&gt;This is my first webpage.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+                <h2>Conclusion</h2>
+                <p>Learning HTML and CSS is the first step toward becoming a web developer. These technologies are powerful, versatile, and essential for creating modern websites.</p>
+            </div>
+        </article>
+
+        <section class="post-navigation">
+            <a href="#" class="nav-button prev">Previous Post</a>
+            <a href="index.html" class="nav-button home">Back to Home</a>
+            <a href="#" class="nav-button next">Next Post</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 My Simple Blog. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
